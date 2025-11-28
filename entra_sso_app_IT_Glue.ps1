@@ -106,6 +106,8 @@ function deploy_app {
  
  $Global:Enterpriseapp = Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId '8adf8e6e-67b2-4cf2-a259-e3dc5476c621'  -DisplayName $Display_Name -ErrorAction Stop
 
+    Start-Sleep -Seconds 5
+
     $enter_app = (Get-MgServicePrincipal -All | Where-Object { $_.DisplayName -eq $Display_Name })
     $Id = $($enter_app.Id)
 

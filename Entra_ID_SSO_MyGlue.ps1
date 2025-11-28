@@ -100,7 +100,7 @@ function deploy_app {
 
  Connect-MgGraph
 
- $Display_Name = Read-Host "Enter the name for the SSO App (For e.g.: IT Glue SSO)"
+ $Display_Name = Read-Host "Enter the name for the SSO App (For e.g.: MYGlueSSO)"
     
  
  $Global:Enterpriseapp = Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId '8adf8e6e-67b2-4cf2-a259-e3dc5476c621'  -DisplayName $Display_Name -ErrorAction Stop

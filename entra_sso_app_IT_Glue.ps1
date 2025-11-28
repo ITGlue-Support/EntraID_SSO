@@ -20,7 +20,10 @@ function display_info {
 
     Write-Host "Fingerprint: $fingerprint" -ForegroundColor Green
 
-    Write-Host "Please download the certificate from Enterprise App in Base 64 format"
+    Write-Host "Please download the certificate from Enterprise App in Base 64 format" -ForegroundColor Yellow
+
+    Write-Host "You can now assign the Groups or User to the app, so that they can access this Microsoft app when they login Microsoft MyApps" -ForegroundColor Yellow
+
 
 }
 
